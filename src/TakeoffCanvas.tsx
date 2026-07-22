@@ -239,7 +239,7 @@ export default function TakeoffCanvas({ runs, setRuns, mode, hidden, armed, onDi
 
   return (
     <div className={`sheet ${cursorClass}`}>
-      <img src="/blueprint.png" alt="Blueprint — Irrigation Plan" draggable={false} />
+      <img src={`${import.meta.env.BASE_URL}blueprint.png`} alt="Blueprint — Irrigation Plan" draggable={false} />
       <svg
         ref={svgRef}
         viewBox={`0 0 ${IMG_W} ${IMG_H}`}
